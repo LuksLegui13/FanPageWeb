@@ -1,0 +1,209 @@
+/*RESET BÁSICO Y FUENTES*/
+* {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho/alto */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible y moderna */
+  background-color: #0a0a0a; /* Fondo oscuro temático de LoL */
+  color: #f0e6d2; /* Color claro para el texto, inspirado en la paleta de LoL */
+  line-height: 1.6; /* Mejora la lectura del texto */
+  padding: 0x; /* Espaciado interno general */
+}
+
+/* ENCABEZADO Y NAVEGACIÓN*/
+header {
+  background-color: #111; /* Fondo oscuro para el header */
+  padding: 20px; /* Espaciado interno */
+  border-bottom: 2px solid #c89b3c; /* Línea inferior dorada decorativa */
+  text-align: center; /* Centra el texto */
+}
+
+header h1 {
+  font-size: 2em; /* Tamaño de fuente grande para el título */
+  color: #c89b3c; /* Dorado típico de League of Legends */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+nav ul {
+  list-style: none; /* Quita los puntos de la lista */
+  display: flex; /* Alineación horizontal de los ítems */
+  justify-content: center; /* Centra horizontalmente */
+  flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben */
+  gap: 20px; /* Espacio entre ítems */
+}
+
+nav ul li a {
+  color: #f0e6d2; /* Color claro para enlaces */
+  text-decoration: none; /* Sin subrayado */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  border: 1px solid #c89b3c; /* Borde dorado */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: 0.3s ease; /* Animación suave al hacer hover */
+}
+
+nav ul li a:hover {
+  background-color: #c89b3c; /* Fondo dorado al pasar el mouse */
+  color: #000; /* Texto negro para contraste */
+}
+hr{
+  border: none; /* Quita el borde por defecto */
+  height: 2px; /* Grosor de la línea */
+  background-color: #c89b3c; /* Color dorado */
+  margin: 20px auto; /* Espaciado arriba y abajo */
+  width: 100%; /* Ancho de la línea */
+}
+
+/* SECCIONES GENERALES*/
+div {
+  margin-top: 15px; /* Espaciado entre divs */
+}
+ul li::marker {
+  color: #c89b3c; /* dorado estilo League of Legends */
+}
+
+.h2-champs{
+    text-align: center; /*Centra el texto*/
+    text-decoration: underline; /*Aplica una linea debajo */
+    text-underline-offset: 4px; /* distancia entre el texto y la línea */
+
+}
+.parrafo-contacto{
+    text-align: center;
+}
+#lol  {
+    text-align: center;
+    font-size: 2em;
+}
+#lol-img{
+    width: 35%;
+    padding: 5px;
+}
+
+main {
+  padding: 40px; /* Relleno general del contenido principal */
+}
+
+section {
+  margin-bottom: 40px; /* Espacio entre secciones */
+}
+
+section h2, h3 {
+  color: #c89b3c; /* Títulos en color dorado */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+img, video, iframe {
+  display: block; /* Los convierte en bloques para poder centrar */
+  margin: 10px auto; /* Centrado automático */
+  max-width: 100%; /* Ajuste al tamaño del contenedor */
+  border: 2px solid #c89b3c; /* Borde dorado */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+/*BLOCKQUOTE Y FRASES*/
+blockquote {
+  font-style: italic; /* Estilo cursiva */
+  color: #999; /* Gris claro para diferenciar */
+  padding: 10px 20px; /* Espaciado interno */
+  border-left: 3px solid #c89b3c; /* Línea vertical dorada al costado */
+  background-color: #1a1a1a; /* Fondo oscuro dentro del bloque */
+  margin: 15px 0; /* Margen arriba y abajo */
+}
+em{
+    color: #c89b3c; /* Títulos en color dorado */
+}
+
+/* FORMULARIO DE CONTACTO*/
+form {
+  background-color: #1a1a1a; /* Fondo del formulario */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #c89b3c; /* Borde dorado */
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 0 auto 40px auto; /* Centrado y margen inferior */
+}
+
+label {
+  display: block; /* Ocupar toda la línea */
+  margin-bottom: 5px; /* Espacio debajo de cada etiqueta */
+  color: #f0e6d2; /* Color claro */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Separación entre campos */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Sin bordes por defecto */
+  background-color: #333; /* Fondo oscuro para inputs */
+  color: #f0e6d2; /* Texto claro */
+}
+
+button {
+  background-color: #c89b3c; /* Fondo dorado para el botón */
+  color: #000; /* Texto oscuro */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Tamaño del botón */
+  cursor: pointer; /* Cursor de mano */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: 0.3s ease; /* Animación suave */
+}
+
+button:hover {
+  background-color: #a67c00; /* Color más oscuro al pasar el mouse */
+}
+/* Íconos redes sociales */
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+.icono-red {
+  width: 80px;
+  height:80px;
+  transition: transform 0.3s ease;
+}
+.icono-red:hover {
+  transform: scale(1.2);
+}
+
+
+/*  PIE DE PÁGINA*/
+footer {
+  background-color: #111; /* Fondo oscuro */
+  color: #999; /* Texto gris claro */
+  text-align: center; /* Centrado de texto */
+  padding: 15px; /* Espacio interno */
+  border-top: 2px solid #c89b3c; /* Línea dorada arriba */
+  margin-top: 40px; /* Separación del contenido anterior */
+}
+
+/* MULTIMEDIA Y VIDEOS */
+video {
+  border: 2px solid #c89b3c; /* Borde dorado para videos */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Navegación en vertical */
+    gap: 10px; /* Menor espacio entre ítems */
+  }
+
+  form {
+    width: 90%; /* Formulario más estrecho en pantallas pequeñas */
+  }
+
+  iframe {
+    width: 100%; /* Iframes adaptables al ancho */
+    height: auto; /* Altura automática */
+  }
+}
