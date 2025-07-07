@@ -191,11 +191,29 @@ video {
   border-radius: 8px; /* Bordes redondeados */
 }
 
-/*RESPONSIVE*/
+/* RESPONSIVE */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column; /* Navegación en vertical */
     gap: 10px; /* Menor espacio entre ítems */
+    align-items: stretch; /* Hace que cada botón ocupe el ancho disponible */
+  }
+
+  nav ul li a {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    width: auto; /* Que cada botón ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
+    font-size: 1.1em; /* Aumenta el tamaño del texto */
+    padding: 15px; /* Aumenta el espacio interno */
+    color: #f0e6d2; /* Color del texto */
+    transition: 0.3s ease; /* Animación suave al hacer hover */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #c89b3c; /* Borde dorado */
+  }
+
+  nav ul li a:hover {
+    background-color: #c89b3c; /* Fondo dorado al pasar el mouse */
+    color: #000; /* Texto negro para contraste */
   }
 
   form {
